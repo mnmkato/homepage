@@ -1,0 +1,96 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+#about,#contact{
+    background-color: rgb(50, 154, 188);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
+}
+.about_content,#projects,.contact_content{
+    padding: 3rem 5rem;
+}
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+}
+.name{
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.about_image{
+    width: 30%;
+    height: auto;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
+}
+#summary{
+    background-color: white;
+    width: 50%;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+.icons{
+    text-align: right;
+}
+a{
+    text-decoration: none;
+    margin-left: 1rem;
+}
+i{
+    font-size: 1.5em;
+    color: black;
+    
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+.projects_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: space-between;
+}
+.project_item {
+    box-shadow: 0px 5px 5px 3px rgba(0,0,0,0.1);
+    width: 300px;
+}
+.project_details{
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 40px 40px;
+    align-items: center;
+ }
+.project_details>h3{
+   width: fit-content;
+}
+ .project_details>p{
+   grid-area: 2/1/4/4;
+ }
+.project_img{
+    height: 200px;
+    width: 300px;
+    background-image: url("./assets/pexels-lukas-574071.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.contact_content{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.contact_img{
+    width: 50%;
+    margin: 1rem;
+}
+.contact_content .icons{
+    text-align: left;
+    margin-top: 1rem;
+}
+.contact_content a{
+    margin-left: 0rem;
+    margin-right: 1rem;
+}
